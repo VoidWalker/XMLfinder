@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+	<product>
+		<sku>2</sku>
+		<product_type>A</product_type>
+		<main_article>test</main_article>
+	</product>
+	<product>
+		<sku>3</sku>
+		<product_type>A</product_type>
+		<main_article>test</main_article>
+	</product>
+	<product>
+		<sku>4</sku>
+		<product_type>A</product_type>
+		<main_article>test</main_article>
+	</product>
+</CATALOG>
