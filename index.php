@@ -5,7 +5,7 @@ $_updatedFileProductsPath = "updated.xml";
 $fullFileConfigurableProducts = array();
 $updatedFileConfigurableProducts = array();
 
-if($_updatedFileProductsPath !== false) {
+if ($_updatedFileProductsPath !== false) {
     $domUpdated = new DOMDocument();
     $stringFromUpdatedFile = file_get_contents($_updatedFileProductsPath);
     $domUpdated->loadXML($stringFromUpdatedFile);
@@ -52,16 +52,24 @@ echo '<pre>full';
 print_r($fullFileConfigurableProducts);
 echo '</pre>';
 
-
-/*
-function _checkUpdated($mainArticle, $sku)
-{
-    foreach ($updatedFileConfigurableProducts[$mainArticle][] as $) {
-
+foreach ($fullFileConfigurableProducts as $articles => $value) {
+    $updated = 0;
+    $all = 0;
+    foreach ($value as $productType) {
+        foreach ($productType as $product) {
+            $updated += $product;
+            $all++;
+        }
     }
 
+    if ($updated === $all) {
+        unset($fullFileConfigurableProducts[$articles]);
+    }
 }
-*/
+
+echo '<pre>NotFullyUpdated';
+print_r($fullFileConfigurableProducts);
+echo '</pre>';
 
 function _getNodeValue(DOMXPath $xpath, $query, $parentNode = null, $key = 0)
 {

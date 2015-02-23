@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CATALOG>
 	<product>
-		<sku>2</sku>
+		<sku>1-01</sku>
 		<product_type>A</product_type>
-		<main_article>test</main_article>
+		<main_article>test1</main_article>
 	</product>
 	<product>
-		<sku>3</sku>
+		<sku>1-02</sku>
 		<product_type>A</product_type>
-		<main_article>test</main_article>
+		<main_article>test1</main_article>
 	</product>
 	<product>
-		<sku>4</sku>
+		<sku>1-03</sku>
 		<product_type>A</product_type>
-		<main_article>test</main_article>
+		<main_article>test1</main_article>
+	</product>
+	<product>
+		<sku>2-0</sku>
+		<product_type>M</product_type>
+		<main_article>test2</main_article>
+	</product>
+	<product>
+		<sku>2-01</sku>
+		<product_type>A</product_type>
+		<main_article>test2</main_article>
+	</product>
+	<product>
+		<sku>2-02</sku>
+		<product_type>A</product_type>
+		<main_article>test2</main_article>
+	</product>
+	<product>
+		<sku>2-03</sku>
+		<product_type>A</product_type>
+		<main_article>test2</main_article>
 	</product>
 </CATALOG>
